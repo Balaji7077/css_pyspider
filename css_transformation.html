@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css Transforms</title>
+    <style>
+        div
+        {
+            background-color: black;
+            color:aqua;
+            border:3px solid red;
+            width:100px;
+            text-align: center;
+            padding: 40px;
+
+        /*smoother transformation*/
+            transition-property: width, padding,background-color;
+            transition-duration: 2s,2s;
+            transition-timing-function: linear,linear;
+            transition-delay: 0s,0s;
+
+            /*transition:all is linear 2s;*/
+        }
+        div:hover
+        {
+           cursor: pointer;
+           background-color:blue;
+           width:400px;
+           padding:60px;
+
+           
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Transforms
+    </div>
+</body>
+</html>
